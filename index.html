@@ -31,24 +31,10 @@
 
     <!-- main style file -->
     <link rel="stylesheet" href="styles/main.css" />
-    <meta
-      name="google-site-verification"
-      content="qdKbibKEFr5JSw4Woncuy8CVydLC9JNhuTIunAy4L04"
-    />
+   
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-JJK1PGDMGF"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-JJK1PGDMGF");
-    </script>
+  
+   
   </head>
 
   <body>
@@ -97,8 +83,8 @@
         >
           <div class="container">
             <!-- logo -->
-            <div class="logo" title="Priyank">
-              <h1><a href="/">Priyank</a></h1>
+            <div class="logo" title="Harsh Sharma">
+              <h1><a href="/">Harsh Sharma</a></h1>
             </div>
 
             <!-- nav links -->
@@ -304,7 +290,7 @@
                       />
                     </div>
                     <div class="text">
-                      <h3>{{ experienceYears }}+</h3>
+                      <h3>2019</h3>
                       <strong>Years of Experience</strong>
                     </div>
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -517,11 +503,9 @@
                       v-for="item in experienceItems"
                     >
                       <template v-if="Object.keys(item).length > 0">
-                        <h3>{{ item.date }}</h3>
+                        <h3>2019</h3>
                         <div class="ultimate-tooltip">
-                          <h4 class="ultimate-tooltip-title">
-                            {{ item.companyName.en }}
-                          </h4>
+                          <h4 class="ultimate-tooltip-title">Cmsminds</h4>
                           <h5 class="ultimate-tooltip-subtitle">
                             {{ item.jobTitle.en }}
                           </h5>
@@ -731,7 +715,7 @@
                       <ul>
                         <li>
                           <a :href="profileData.phoneNumberLink" class="ltr-dir"
-                            >{{ profileData.phoneNumber }}</a
+                            >8347223122</a
                           >
                         </li>
                       </ul>
@@ -749,12 +733,12 @@
                       <ul>
                         <li>
                           <a :href="profileData.personalEmailLink"
-                            >Professional : {{ profileData.personalEmail }}</a
+                            >Professional : harsh.sharma.sunil@gmail.com</a
                           >
                         </li>
                         <li>
                           <a :href="profileData.freelancerEmailLink"
-                            >Freelance : {{ profileData.freelancerEmail }}</a
+                            >Freelance : harsh.sharma.sunil@gmail.com</a
                           >
                         </li>
                       </ul>
@@ -766,7 +750,7 @@
                 <ul class="social">
                   <li>
                     <a
-                      href="https://www.facebook.com/Pickachu007"
+                      href="https://www.facebook.com/123harsh"
                       target="_blank"
                       rel="noreferrer"
                       v-tooltip="{text: 'Facebook', dir: 'bottom'}"
@@ -788,7 +772,7 @@
                   </li>
                   <li>
                     <a
-                      href="https://www.linkedin.com/in/priyank-solanki-technical-lead/"
+                      href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noreferrer"
                       v-tooltip="{text: 'LinkedIn', dir: 'bottom'}"
@@ -799,7 +783,7 @@
                   </li>
                   <li>
                     <a
-                      href="https://www.instagram.com/click_a_world30/"
+                      href="https://www.instagram.com/"
                       target="_blank"
                       rel="noreferrer"
                       v-tooltip="{text: 'Instagram', dir: 'bottom'}"
@@ -810,7 +794,7 @@
                   </li>
                   <li>
                     <a
-                      href="https://github.com/Priyank-Solanki/"
+                      href="https://github.com/"
                       target="_blank"
                       rel="noreferrer"
                       v-tooltip="{text: 'GitHub', dir: 'bottom'}"
@@ -823,7 +807,7 @@
               </div>
 
               <!-- contact form -->
-              <div class="col-lg-6">
+              <!-- <div class="col-lg-6">
                 <form
                   ref="contactForm"
                   class="contact-form form-styled"
@@ -846,7 +830,7 @@
                         aria-hidden="true"
                       ></i>
 
-                      <!-- validation errors messages -->
+               
                       <div class="errors-msgs">
                         <input
                           class="required"
@@ -878,7 +862,7 @@
                         aria-hidden="true"
                       ></i>
 
-                      <!-- validation errors messages -->
+                  validation errors messages 
                       <div class="errors-msgs">
                         <input
                           class="required"
@@ -907,7 +891,7 @@
                       />
                       <i class="fa fa-phone prefix-icon" aria-hidden="true"></i>
 
-                      <!-- validation errors messages -->
+                    validation errors messages 
                       <div class="errors-msgs">
                         <input
                           class="invalid"
@@ -931,7 +915,7 @@
                         aria-hidden="true"
                       ></i>
 
-                      <!-- validation errors messages -->
+                      validation errors messages
                       <div class="errors-msgs">
                         <input
                           class="required"
@@ -957,7 +941,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- end of contact section -->
 
         <!-- start of footer -->
@@ -1028,28 +1012,6 @@
         </div>
       </div>
     </div>
-
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-      import {
-        getFirestore,
-        collection,
-        addDoc,
-      } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyBVwqoGuJpflHYtT1IycTnaIaxMJqW0Pzg",
-        authDomain: "priyank-s-portfolio.firebaseapp.com",
-        projectId: "priyank-s-portfolio",
-        storageBucket: "priyank-s-portfolio.appspot.com",
-        messagingSenderId: "182045991167",
-        appId: "1:182045991167:web:41b5cd11423e319b4aecca",
-      };
-      const app = initializeApp(firebaseConfig);
-      window.firebaseDb = getFirestore();
-      window.firebaseAddDoc = addDoc;
-      window.firebaseCollection = collection;
-    </script>
 
     <!-- js plugins file -->
     <script src="scripts/plugins.min.js"></script>

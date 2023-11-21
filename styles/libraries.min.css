@@ -771,20 +771,20 @@ template {
 }
 .fa-facebook-f:before,
 .fa-facebook:before {
-  content: "ï‚š";
+  content: "FB";
 }
 .fa-github:before {
-  content: "ï‚›";
+  content: "GH";
 }
 .fa-unlock:before {
-  content: "ï‚œ";
+  content: "UL";
 }
 .fa-credit-card:before {
-  content: "ï‚";
+  content: "CD";
 }
 .fa-feed:before,
 .fa-rss:before {
-  content: "ï‚ž";
+  content: "RSS";
 }
 .fa-hdd-o:before {
   content: "ï‚ ";

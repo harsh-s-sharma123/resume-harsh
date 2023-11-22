@@ -8,6 +8,18 @@
       name="description"
       content="Hi! I'm Harsh Sharma, a 4+ years experienced WebAPI & Frontend Developer. I'm passionate about creating intuitive and efficient solutions. Contact me to learn more."
     />
+    <style>
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+      .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -302,7 +314,7 @@
                       <h3>2019</h3>
                       <strong>Years of Experience</strong>
                     </div>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <i class="arrow right" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li class="col-sm-12 col-md-6 col-lg-4">
@@ -316,10 +328,10 @@
                       />
                     </div>
                     <div class="text">
-                      <h3>{{ countOfProject }}+</h3>
+                      <h3>5+</h3>
                       <strong>Project Works</strong>
                     </div>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <i class="arrow right" aria-hidden="true"></i>
                   </a>
                 </li>
                 <li class="col-sm-12 col-md-6 col-lg-4">
@@ -336,7 +348,7 @@
                       <h3>{{ countOfTestimonials }}+</h3>
                       <strong>Co-Workers's Review</strong>
                     </div>
-                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <i class="arrow right" aria-hidden="true"></i>
                   </a>
                 </li>
               </ul>
@@ -417,10 +429,12 @@
                     Skills Included?
                   </h2>
                   <p>
-                    Agile Testing, Basic SEO, Functional Testing, JIRA, Manual Testing, Postman API Basic , Quality Assurance,
-                    Regression Testing, Responsive testing , Selenium Basic, Software Quality Assurance, Software Testing,
-                    Test Automation Basic , Test Cases, Testing, Test Management, Trello, Unit Testing, User Acceptance
-                    Testing, Zoho
+                    Agile Testing, Basic SEO, Functional Testing, JIRA, Manual
+                    Testing, Postman API Basic , Quality Assurance, Regression
+                    Testing, Responsive testing , Selenium Basic, Software
+                    Quality Assurance, Software Testing, Test Automation Basic ,
+                    Test Cases, Testing, Test Management, Trello, Unit Testing,
+                    User Acceptance Testing, Zoho
                   </p>
                   <div ref="skillsSwitchBtn" class="toggle-switch-btn">
                     <input
@@ -1089,7 +1103,7 @@
                     :id="notify.id"
                     :class="['notification', 'show', notify.className, notify.time && 'timer']"
                   >
-                    {{ notify.msg }}
+                    loading
                     <i
                       class="fa fa-times link-hover"
                       aria-hidden="true"
